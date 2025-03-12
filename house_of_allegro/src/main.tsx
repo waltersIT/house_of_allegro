@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import '/src/App.css'
 import NotFound from './components/NotFound.tsx';
 import HomePage from './components/HomePage.tsx';
+import info from './components/info.json';
 
 const router = createBrowserRouter([{
   path: '/',
