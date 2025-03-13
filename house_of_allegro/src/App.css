@@ -390,12 +390,15 @@ header .overlay {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
 }
 
 .center-container {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 30px;
 }
 
 .left {
