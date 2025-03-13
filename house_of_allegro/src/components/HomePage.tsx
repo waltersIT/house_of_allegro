@@ -1,23 +1,50 @@
 import { Link } from "react-router-dom";
 import Header from "./styles/Header";
+import GoogleCalendar from "./Calendar";
+import Music from "./Spotify.tsx";
 import landing from "./styles/assets/landing.jpeg";
-import info from './info.json';
+import info from "./info.json";
+import EmbededMusic from "./EmbededMusic.tsx";
+import Footer from "./styles/Footer.tsx";
+import Spacer from "./styles/Spacer.tsx";
+import NavBar from "./styles/NavBar.tsx";
+import Events from "./styles/Events.tsx";
 
 /*
 TODO:
+- add express for env and fetching data from postgres
 - link API's
-    - Spotify
     - RA (resident advisor)
-- Calendar
+- make header sticky
 */
 function HomePage() {
-    return(
-        <>
-            <Header title = {info.title}/>
-            <div className="landing-photo">
-                <img src={landing}></img>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <NavBar title={info.title} />
+      <Header
+        title={info.title}
+        youtubeUrl="https://www.youtube.com/embed/UovXmulxXLg"
+      />
+      <div className="side-by-side">
+        <Events title={info.calendar.title} />
+        <EmbededMusic />
+      </div>
+
+      <div className="center-containter">
+        <div className="button-layout">
+          <Link to="/Music">
+            <div className="button-59">Music</div>
+          </Link>
+
+          <Link to="/Events">
+            <div className="button-59">Events</div>
+          </Link>
+        </div>
+      </div>
+
+      <Spacer />
+      <Footer />
+    </>
+  );
 }
 export default HomePage;
