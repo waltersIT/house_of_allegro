@@ -48,7 +48,7 @@ function Events({ title }: Props) {
 
   return (
     <>
-      <NavBar title={info.title} />
+      
       <div className="section">
         <div className="calendar-box">
           <h2 className="calendar-title">
