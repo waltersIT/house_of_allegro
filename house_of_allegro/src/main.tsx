@@ -10,6 +10,7 @@ import Music from "./components/Spotify.tsx";
 import GoogleCalendar from "./components/Calendar.tsx";
 import EventCalendar from "./components/PassedEvents.tsx";
 import About from "./components/About.tsx";
+import Contact from "./components/Contact.tsx";
 
 const router = createBrowserRouter([
   {
@@ -44,6 +45,12 @@ const router = createBrowserRouter([
       />
     ),
   },
+  {
+    path: "/Contact",
+    element: <Contact title={info.title} />,
+    errorElement: <NotFound />,
+  },
+
 ]);
 
 ReactDom.createRoot(document.getElementById("root")!).render(

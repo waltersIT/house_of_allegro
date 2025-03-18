@@ -31,7 +31,7 @@ function NavBar({ title }: Props) {
               <a href="Events">Events</a>
             </li>
             <li>
-              <a href="contact.html">Contact</a>
+              <a href="Contact">Contact</a>
             </li>
           </ul>
           <label htmlFor="menu-btn" className="btn menu-btn">

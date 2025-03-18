@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import Header from "./styles/Header";
 import GoogleCalendar from "./Calendar";
 import Music from "./Spotify.tsx";
-import landing from "./styles/assets/landing.jpeg";
 import info from "./info.json";
 import EmbededMusic from "./EmbededMusic.tsx";
 import Footer from "./styles/Footer.tsx";
@@ -16,11 +15,6 @@ TODO:
 - add express for env and fetching data from postgres
 - link API's
     - RA (resident advisor)
-- make header sticky
-
-
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/QkB-iEkyckc" title="Heartbeat Goes Like - The Unofficial Music Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
 
 
 */
