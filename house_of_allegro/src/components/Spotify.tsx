@@ -11,8 +11,10 @@ const Music = () => {
   const [token, setToken] = useState<string | null>(null);
   const [newReleases, setNewReleases] = useState<any[]>([]);
   const [topTracks, setTopTracks] = useState<any[]>([]);
-
+  
   useEffect(() => {
+    console.log("CLIENT_ID:", CLIENT_ID);
+    console.log("CLIENT_SECRET:", CLIENT_SECRET);
     const fetchToken = async () => {
       try {
         const response = await fetch(TOKEN_URL, {
