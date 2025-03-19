@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import Header from "./styles/Header";
-import GoogleCalendar from "./Calendar";
-import Music from "./Spotify.tsx";
+
 import info from "./info.json";
 import EmbededMusic from "./EmbededMusic.tsx";
 import Footer from "./styles/Footer.tsx";

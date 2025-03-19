@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from "react";
-import NavBar from "./styles/NavBar";
-import info from "./info.json";
-import Footer from "./styles/Footer";
+import { useEffect, useState } from "react";
+
 
 interface Props {
   title: string;

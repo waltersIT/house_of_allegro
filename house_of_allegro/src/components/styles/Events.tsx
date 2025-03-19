@@ -1,8 +1,6 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { gapi } from "gapi-script";
-import NavBar from "../styles/NavBar";
-import info from '../info.json';
-import Footer from "../styles/Footer";
+
 
 const API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 const CALENDAR_ID = import.meta.env.VITE_CALENDAR_ID; // calendar id works tho idk

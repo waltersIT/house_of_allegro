@@ -1,6 +1,5 @@
 import NavBar from "./styles/NavBar";
 import Footer from "./styles/Footer";
-import info from "./info.json";
 import ContactForm from "./styles/ContactForm";
 
 interface Props {

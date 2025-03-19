@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import ReactDom from "react-dom/client";
-import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.css";
 import "/src/App.css";
 import info from "./components/info.json";

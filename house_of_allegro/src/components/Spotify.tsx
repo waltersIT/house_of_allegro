@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import info from './info.json';
 import NavBar from "./styles/NavBar";
 import Footer from "./styles/Footer";
@@ -9,7 +9,6 @@ const TOKEN_URL = "https://accounts.spotify.com/api/token";
 
 const Music = () => {
   const [token, setToken] = useState<string | null>(null);
-  const [featuredPlaylists, setFeaturedPlaylists] = useState<any[]>([]);
   const [newReleases, setNewReleases] = useState<any[]>([]);
   const [topTracks, setTopTracks] = useState<any[]>([]);
 
