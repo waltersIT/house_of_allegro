@@ -1,19 +1,26 @@
-// server.js
+require('dotenv').config();
 const express = require('express');
-const dotenv = require('dotenv');
-
-// Load environment variables from .env file
-dotenv.config();
+const cors = require('cors');
+const axios = require('axios');
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+app.use(cors());
+app.use(express.json());
 
-// A sample API endpoint
-app.get('/api', (req, res) => {
-  res.json({ message: "Hello from the Express backend!" });
+const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
+const CALENDAR_ID = process.env.CALENDAR_ID;
+
+app.get('/api/events', async (req, res) => {
+  try {
+    const timeMin = new Date().toISOString();
+    const url = `https://www.googleapis.com/calendar/v3/calendars/${CALENDAR_ID}/events?timeMin=${timeMin}&singleEvents=true&orderBy=startTime&maxResults=10&key=${GOOGLE_API_KEY}`;
+    const response = await axios.get(url);
+    res.json(response.data);
+  } catch (error) {
+    console.error('Error fetching events:', error);
+    res.status(500).json({ error: 'Error fetching events' });
+  }
 });
 
-// Start the server
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+console.log("i am alive");
+app.listen(3000, () => console.log('Server running on port 3000'));

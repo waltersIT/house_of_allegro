@@ -1,18 +1,17 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "description": "",
+  "description": "backend test",
+  "repository": {
+    "type": "git",
+    "url": "house_of_allegro"
+  },
+  "license": "ISC",
+  "author": "walter",
+  "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "runTest",
     "start": "node server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2"
   }
 }
