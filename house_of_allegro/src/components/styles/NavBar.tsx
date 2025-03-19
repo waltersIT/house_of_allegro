@@ -22,16 +22,16 @@ function NavBar({ title }: Props) {
               <a href="/">Home</a>
             </li>
             <li>
-              <a href="About">About</a>
+              <a href="/About">About</a>
             </li>
             <li>
-              <a href="Music">Music</a>
+              <a href="/Music">Music</a>
             </li>
             <li>
-              <a href="Events">Events</a>
+              <a href="/Events">Events</a>
             </li>
             <li>
-              <a href="Contact">Contact</a>
+              <a href="/Contact">Contact</a>
             </li>
           </ul>
           <label htmlFor="menu-btn" className="btn menu-btn">
