@@ -12,7 +12,8 @@ function ApiTest({ title }: Props) {
     const fetchEvents = async () => {
       try {
         //tried apitest/api/events
-        const response = await fetch("https://main.dtrj582uz1mg.amplifyapp.com/apitest/");
+        //tried just api test
+        const response = await fetch("3.83.64.73:3000");
         const data = await response.json();
         // Google Calendar API returns events in data.items
         setEvents(data.items || []);
