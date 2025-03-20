@@ -1,3 +1,6 @@
+//need reverse proxy to make it so it can add https request see video
+
+
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -9,7 +12,10 @@ app.use(express.json());
 
 const GOOGLE_API_KEY = process.env.GOOGLE_API_KEY;
 const CALENDAR_ID = process.env.CALENDAR_ID;
+//add spotify fetch functions
 
+
+//gets event lists
 app.get('/api/events', async (req, res) => {
   try {
     const timeMin = new Date().toISOString();

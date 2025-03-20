@@ -11,10 +11,11 @@ import Events from "./styles/Events.tsx";
 
 /*
 TODO:
-- add express for env and fetching data from postgres
+- Make it so it can call the https request securely
 - link API's
     - RA (resident advisor)
-
+- edit for mobile use
+- 
 
 */
 function HomePage() {
