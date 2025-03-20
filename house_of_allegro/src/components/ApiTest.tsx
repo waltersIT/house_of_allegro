@@ -13,7 +13,8 @@ function ApiTest({ title }: Props) {
       try {
         //tried apitest/api/events
         //tried just api test
-        const response = await fetch(".");
+        //tried just the base url
+        const response = await fetch("3.83.64.73:3000");
         const data = await response.json();
         // Google Calendar API returns events in data.items
         setEvents(data.items || []);
