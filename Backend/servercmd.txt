@@ -3,5 +3,5 @@ ssh -i "hoa-walter-mbp.pem" ubuntu@ec2-3-83-64-73.compute-1.amazonaws.com
 
 adding ec2 instance:
 rsync -avz --exclude 'node_modules' --exclude '.git' --exclude '.env' \
--e "ssh -i ~/downloads/hoa-walter-mbp.pem" \
-. ubuntu@ec2-3-83-64-73.compute-1.amazonaws.com:~/backend
+-e "ssh -i ~/downloads/hoa-walter.pem" \
+. ubuntu@ec2-44-201-171-171.compute-1.amazonaws.com:~/hoa

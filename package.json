@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:client": "cd house_of_allegro && npm install && npm run build",
+    "build:server": "cd backend && npm install && npm install cors dotenv path axios express",
+    "build": "npm run build:client && npm run build:server",
+    "start": "cd backend && npm start"
   },
   "repository": {
     "type": "git",
