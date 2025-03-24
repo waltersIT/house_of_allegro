@@ -758,6 +758,14 @@ nav .wrapper{
 
 @media screen and (max-width: 970px) {
 
+  .contact-box {
+    margin: 0px;
+  }
+
+  .contact-us-box {
+    margin: 0px;
+  }
+
   .calendar-box {
     margin: 0px;
   }
@@ -785,6 +793,11 @@ nav .wrapper{
   }
 
   .button-layout {
+    grid-template-columns: repeat(1, minmax(20px, 1fr));
+    gap: 20px;
+  }
+
+  .button-layout-contact {
     grid-template-columns: repeat(1, minmax(20px, 1fr));
     gap: 20px;
   }
