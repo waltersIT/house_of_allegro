@@ -28,21 +28,26 @@ const ContactForm: React.FC = () => {
   };
 
   return (
+    <>
+    <h2>Contact Us</h2>
     <form ref={form} onSubmit={sendEmail}>
-      <div>
-        <label htmlFor="user_name">Name:</label>
-        <input type="text" id="user_name" name="user_name" required />
+        <div className="form-group">
+          <label htmlFor="name">Name: </label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="email">Email: </label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div className="form-group">
+          <label htmlFor="message">Message: </label>
+          <textarea id="message" name="message" rows={4} required></textarea>
+        </div>
+        <div className="center-container">
+        <button className="button-59" type="submit">Send</button>
       </div>
-      <div>
-        <label htmlFor="user_email">Email:</label>
-        <input type="email" id="user_email" name="user_email" required />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message" required />
-      </div>
-      <button type="submit">Send</button>
-    </form>
+      </form>
+      </>
   );
 };
 

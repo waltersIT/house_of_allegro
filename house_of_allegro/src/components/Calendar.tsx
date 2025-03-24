@@ -20,9 +20,7 @@ function GoogleCalendar({ title }: Props) {
 
       <NavBar title={title} />
         <Events title={info.calendar.title} />
-        <PassedEvents title={info.calendar.title} />
-       
-      
+        <PassedEvents title={info.calendar.passedTitle} />
       <Footer />
     </>
   );

@@ -5,7 +5,8 @@
         "name": "HOUSE OF ALLEGRO"
     },
     "calendar": {
-        "title": "Up Coming Events"
+        "title": "Up Coming Events",
+        "passedTitle": "Passed Events"
     },
     "about": {
         "title": "About",

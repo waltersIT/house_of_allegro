@@ -14,12 +14,12 @@ function Footer() {
             <div className="left">
             <ul>
                 
-                <div className="side-by-side">
+                <div className="side-by-side-footer">
               <li>
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">About</a>
+                <a href="/About">About</a>
               </li>
               
               
@@ -31,7 +31,7 @@ function Footer() {
                 <a href="Events">Events</a>
               </li>
               <li>
-                <a href="#">Videos</a>
+                <a href="/Contact">Contact</a>
               </li>
               </div>
             </ul>

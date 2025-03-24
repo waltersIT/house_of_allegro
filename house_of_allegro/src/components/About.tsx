@@ -27,14 +27,17 @@ function About({title, descriptionOne, descriptionTwo, descriptionThree, descrip
         </div>
         </div>
             <div className="section">
-                <div className="calendar-box">
+                <div className="about-box">
+                    <div className="events-container">
                     <h2 className="calendar-title">
                         {title}
+                        <div className="line"></div>
                     </h2>
                     <p>{descriptionOne}</p>
                     <p>{descriptionTwo}</p>
                     <p>{descriptionThree}</p>
                     <p>{descriptionFour}</p>
+                </div>
                 </div>
             </div>
             <Footer />

@@ -13,15 +13,29 @@ function Contact({ title }: Props) {
   return (
     <>
       <NavBar title={title} />
-      <div className="section">
-        <div className="calendar-box">
-            <h1>Check Us Out</h1>
-            <ul></ul>
-        </div>
-      <div className="calendar-box">
+      <div className="side-by-side">
+        <div className="contact-us-box">
+          <div className="events-container">
+            <h2 className="calendar-title" style={{paddingBottom: '50px'}}>Check Us Out</h2>
+
+            <div className="button-layout-contact">
+              <a href="https://www.youtube.com/@HouseOfAllegro">
+              <div className="button-59"> Youtube </div></a>
+
+              <a href="https://www.instagram.com/houseofallegro/">
+              <div className="button-59"> Instagram </div></a>
+
+              <a href="https://open.spotify.com/artist/1GB2pMPzC9ID26TpYcxcbM">
+              <div className="button-59"> Spotify </div></a>
+
+              <a href="https://www.tiktok.com/@houseofallegro?_t=8is1TKWx1ub&_r=1">
+              <div className="button-59"> TikTok </div></a>
+            </div>
+        </div></div>
+      <div className="contact-box">
         <ContactForm />
-        </div>
-        </div>
+
+        </div></div>
       <Footer />
     </>
   );

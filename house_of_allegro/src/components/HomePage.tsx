@@ -40,6 +40,15 @@ function HomePage() {
           <Link to="/Events">
             <div className="button-59">Events</div>
           </Link>
+
+          <Link to="/About">
+            <div className="button-59">About</div>
+          </Link>
+
+          <Link to="/Contact">
+            <div className="button-59">Contact</div>
+          </Link>
+
         </div>
       </div>
 

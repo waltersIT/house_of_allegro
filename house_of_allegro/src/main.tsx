@@ -21,7 +21,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/Events",
-    element: <GoogleCalendar title={info.calendar.title} />, //make the main calls not take any props
+    element: <GoogleCalendar title={info.title} />, //make the main calls not take any props
     errorElement: <NotFound />,
   },
   {
@@ -31,7 +31,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/PassedEvents",
-    element: <EventCalendar title={info.calendar.title} />,
+    element: <EventCalendar title={info.calendar.passedTitle} />,
     errorElement: <NotFound />,
   },
   {
