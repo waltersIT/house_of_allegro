@@ -1,15 +1,1 @@
-<video playsInline={true} autoPlay={true} muted={true} loop={true}>
-          <source
-            src="https://cdn.coverr.co/videos/coverr-cinematic-snowy-mountains-7615/720p.mp4"
-            type="video/mp4"
-          ></source>
-        </video>
 
-
-        House of Allegro is a constant evolution of beats from Melodic House to Downtempo to Trap to Techno and all in-between.
-
-Alec, the producer and beats behind House of Allegro pushes his music production and DJ skills each day. He most recently has taken part in competitions via Label Radar, and other events across London, recently coming second place in a Pirate Studio Production event. Alec has had the pleasure of working closely with the talented Michelina, who has been the voice behind the majority of the tracks and a crucial part of the first releases.
-
-House of Allegro also collaborates with other upcoming artists across London and internationally.
-
-Most recently House of Allegro played a set under the Mustache Crew Record Label with Michelina singing
