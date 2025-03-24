@@ -1,7 +1,1 @@
-Launching Ubuntu shell:
-ssh -i "hoa-walter.pem" ubuntu@ec2-44-201-171-171.compute-1.amazonaws.com
 
-adding ec2 instance:
-rsync -avz --exclude 'node_modules' --exclude '.git' --exclude '.env' \
--e "ssh -i ~/downloads/hoa-walter.pem" \
-. ubuntu@ec2-44-201-171-171.compute-1.amazonaws.com:~/hoa
