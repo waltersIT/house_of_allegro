@@ -7,8 +7,7 @@ interface Props {
 }
 
 function Contact({ title }: Props) {
-    //email js here
-
+  //email js here
 
   return (
     <>
@@ -16,26 +15,35 @@ function Contact({ title }: Props) {
       <div className="side-by-side">
         <div className="contact-us-box">
           <div className="events-container">
-            <h2 className="calendar-title" style={{paddingBottom: '50px'}}>Check Us Out</h2>
+            <h2 className="calendar-title" style={{ paddingBottom: "50px" }}>
+              Media
+            </h2>
 
             <div className="button-layout-contact">
               <a href="https://www.youtube.com/@HouseOfAllegro">
-              <div className="button-59"> Youtube </div></a>
+                <div className="button-59"> Youtube </div>
+              </a>
 
               <a href="https://www.instagram.com/houseofallegro/">
-              <div className="button-59"> Instagram </div></a>
+                <div className="button-59"> Instagram </div>
+              </a>
 
               <a href="https://open.spotify.com/artist/1GB2pMPzC9ID26TpYcxcbM">
-              <div className="button-59"> Spotify </div></a>
+                <div className="button-59"> Spotify </div>
+              </a>
 
               <a href="https://www.tiktok.com/@houseofallegro?_t=8is1TKWx1ub&_r=1">
-              <div className="button-59"> TikTok </div></a>
+                <div className="button-59"> TikTok </div>
+              </a>
             </div>
-        </div></div>
-      <div className="contact-box">
-        <ContactForm />
+          </div>
+        </div>
+        <div className="mobile-spacer" />
 
-        </div></div>
+        <div className="contact-box">
+          <ContactForm />
+        </div>
+      </div>
       <Footer />
     </>
   );
