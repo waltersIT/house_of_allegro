@@ -29,7 +29,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <>
-    <h2>Contact Us</h2>
+    <h2>Contact</h2>
     <form ref={form} onSubmit={sendEmail}>
         <div className="form-group">
           <label htmlFor="name">Name: </label>
