@@ -1,51 +1,58 @@
-import NavBar from "./styles/NavBar";
-import Footer from "./styles/Footer";
-import ContactForm from "./styles/ContactForm";
+import { Link } from "react-router-dom";
+import Header from "./styles/Header";
 
-interface Props {
-  title: string;
-}
+import info from "./info.json";
+import EmbededMusic from "./EmbededMusic.tsx";
+import Footer from "./styles/Footer.tsx";
+import Spacer from "./styles/Spacer.tsx";
+import NavBar from "./styles/NavBar.tsx";
+import Events from "./styles/Events.tsx";
 
-function Contact({ title }: Props) {
-  //email js here
 
+/*
+TODO:
+- RA (resident advisor)
+ 
+
+*/
+function HomePage() {
   return (
     <>
-      <NavBar title={title} />
+      <NavBar title={info.title} />
+      <Header
+        title={info.title}
+        youtubeUrl="https://www.youtube.com/embed/QkB-iEkyckc"
+      />
       <div className="side-by-side">
-        <div className="contact-us-box">
-          <div className="events-container">
-            <h2 className="calendar-title" style={{ paddingBottom: "50px" }}>
-              Media
-            </h2>
+        <Events title={info.calendar.title} />
+        <div className="mobile-spacer"></div>
+        <EmbededMusic />
+      </div>
 
-            <div className="button-layout-contact">
-              <a href="https://www.youtube.com/@HouseOfAllegro">
-                <div className="button-59"> Youtube </div>
-              </a>
+      <div className="center-containter">
+        <div className="button-layout">
+          <Link to="/Music">
+            <div className="button-59">Music</div>
+          </Link>
 
-              <a href="https://www.instagram.com/houseofallegro/">
-                <div className="button-59"> Instagram </div>
-              </a>
+          <Link to="/Events">
+            <div className="button-59">Events</div>
+          </Link>
 
-              <a href="https://open.spotify.com/artist/1GB2pMPzC9ID26TpYcxcbM">
-                <div className="button-59"> Spotify </div>
-              </a>
+          <Link to="/About">
+            <div className="button-59">About</div>
+          </Link>
 
-              <a href="https://www.tiktok.com/@houseofallegro?_t=8is1TKWx1ub&_r=1">
-                <div className="button-59"> TikTok </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div className="mobile-spacer" />
+          <Link to="/Contact">
+            <div className="button-59">Contact</div>
+          </Link>
 
-        <div className="contact-box">
-          <ContactForm />
         </div>
       </div>
+
+      <Spacer />
       <Footer />
     </>
   );
 }
-export default Contact;
+export default HomePage;
