@@ -1,10 +1,20 @@
-
+import { useState } from "react";
 
 interface Props {
   title: string;
 }
 
 function NavBar({ title }: Props) {
+
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+
+
   return (
     <>
       <nav>
@@ -12,12 +22,15 @@ function NavBar({ title }: Props) {
           <div className="logo">
             <a href="/">{title}</a>
           </div>
-          <input type="radio" name="slider" id="menu-btn" />
-          <input type="radio" name="slider" id="close-btn" />
-          <ul className="nav-links">
-            <label htmlFor="close-btn" className="btn close-btn">
-              <i className="fas fa-times"></i>
-            </label>
+
+
+ 
+      <div className="hamburger" onClick={toggleMenu}>
+        <div className="line" />
+        <div className="line" />
+        <div className="line" />
+      </div>
+      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
             <li>
               <a href="/">Home</a>
             </li>
@@ -34,9 +47,6 @@ function NavBar({ title }: Props) {
               <a href="/Contact">Contact</a>
             </li>
           </ul>
-          <label htmlFor="menu-btn" className="btn menu-btn">
-            <i className="fas fa-bars"></i>
-          </label>
         </div>
       </nav>
         <br></br>
