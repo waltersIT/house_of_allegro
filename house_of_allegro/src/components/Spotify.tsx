@@ -10,7 +10,7 @@ const Music = () => {
   useEffect(() => {
     const fetchSpotifyData = async () => {
       try {
-        const response = await fetch('/api/spotify');
+        const response = await fetch('https://houseofallegro.com/api/spotify');
         if (!response.ok) {
           throw new Error(`HTTP error! Status: ${response.status}`);
         }
