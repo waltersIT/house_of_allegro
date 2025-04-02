@@ -40,7 +40,7 @@ function EventCalendar({ title }: Props) {
             </h2>
             <ul className="event-list">
               {passedEvents.length > 0 ? (
-                passedEvents.map((event, index) => (
+                passedEvents.slice().reverse().map((event, index) => (
                   <ul key={index}>
                     <strong className="event-header">{event.summary}</strong>
                     <br />
