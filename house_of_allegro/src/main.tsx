@@ -11,7 +11,7 @@ import GoogleCalendar from "./components/Calendar.tsx";
 import EventCalendar from "./components/PassedEvents.tsx";
 import About from "./components/About.tsx";
 import Contact from "./components/Contact.tsx";
-import ApiTest from "./components/ApiTest.tsx";
+
 
 const router = createBrowserRouter([
   {
@@ -32,11 +32,6 @@ const router = createBrowserRouter([
   {
     path: "/PassedEvents",
     element: <EventCalendar title={info.calendar.passedTitle} />,
-    errorElement: <NotFound />,
-  },
-  {
-    path: "/ApiTest",
-    element: <ApiTest title={info.calendar.title}/>,
     errorElement: <NotFound />,
   },
   {
