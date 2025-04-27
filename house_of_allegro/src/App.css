@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: 'Oswald', sans-serif;
 }
-:root {
+:root { 
   --main-bg-color: #171717;
   --header-bg-color: #171717;
   --category-bg-color: #FFFFFF;
